@@ -19,6 +19,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    color: gray;
 }
 .chat-footer-right{
     height: 100%;
@@ -32,4 +33,5 @@
     border-radius: 10px;
     padding-left: 10px;
     font-size: large;
+     color: rgb(96, 88, 88);
 }

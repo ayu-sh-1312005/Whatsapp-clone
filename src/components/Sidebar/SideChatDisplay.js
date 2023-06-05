@@ -1,6 +1,6 @@
 /*jshint esversion: 6 */
 import "./SideChatDisplay.css";
-import { IconButton } from "@mui/material";
+import { Avatar, IconButton } from "@mui/material";
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 
 const profileIcon={
@@ -21,7 +21,7 @@ function SideChatDisplay(){
         <div className="side-chat-display">
             <div className="people-side-icon">
                 <IconButton>
-                        <AccountCircleIcon style={chatIcon} />
+                        <AccountCircleIcon src="" style={chatIcon} />
                 </IconButton>
             </div>
             <div className="people-side-chat">
