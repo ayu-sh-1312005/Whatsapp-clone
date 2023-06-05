@@ -1,0 +1,17 @@
+.sender{
+    background-color: red;
+    display: flex;
+    justify-content: flex-end;
+}
+.sender-message{
+    background-color: white;   
+    padding: 5px;
+    margin: 5px;
+    border-radius: 10px;
+    width: 80%;
+    color: rgb(69, 68, 68);
+}
+.sender-time{
+    font-size: small;
+    float: right;
+}
