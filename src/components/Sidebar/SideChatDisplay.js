@@ -11,8 +11,10 @@ const profileIcon={
 
 const chatIcon={
     height:"40px",
-    width: "40px"
+    width: "40px",
+    color: "#D3D3D3",
 };
+
 
 function SideChatDisplay(){
     return (

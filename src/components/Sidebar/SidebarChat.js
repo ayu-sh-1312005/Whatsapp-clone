@@ -21,6 +21,22 @@ function SidebarChat(){
              <SideChatDisplay />
              <SideChatDisplay />
              <SideChatDisplay />
+             <SideChatDisplay />
+             <SideChatDisplay />
+             <SideChatDisplay />
+             <SideChatDisplay />
+             <SideChatDisplay />
+             <SideChatDisplay />
+             <SideChatDisplay />
+             <SideChatDisplay />
+             <SideChatDisplay />
+             <SideChatDisplay />
+             <SideChatDisplay />
+             <SideChatDisplay />
+             <SideChatDisplay />
+             <SideChatDisplay />
+             <SideChatDisplay />
+             <SideChatDisplay />
         </div>
     )
 }

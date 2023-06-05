@@ -1,4 +1,35 @@
 .chat-footer{
     border: 1px solid black;
     flex: 0.1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: gray;
+}
+.chat-footer-left{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex: 0.15;
+}
+.chat-footer-input{
+    height: 100%;
+    flex: 0.85;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.chat-footer-right{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sendInput{
+    height: 80%;
+    width: 100%;
+    border-radius: 10px;
+    padding-left: 10px;
+    font-size: large;
 }

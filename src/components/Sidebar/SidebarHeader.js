@@ -11,7 +11,7 @@ const profileIcon={
     height: "50px",
     color: "#D3D3D3",
 };
-const leftsideIcon={
+const rightsideIcon={
     width: "25px",
     height: "25px",
     color: "#606060",
@@ -28,17 +28,17 @@ function SidebarHeader(){
             <div className="sidebar-header-right">
                 <div className="sidebar-header-right-icon">
                     <IconButton>
-                        <DonutLargeIcon style={leftsideIcon} />
+                        <DonutLargeIcon style={rightsideIcon} />
                     </IconButton>
                 </div>
                 <div className="sidebar-header-right-icon">
                     <IconButton>
-                        <ChatIcon style={leftsideIcon} />
+                        <ChatIcon style={rightsideIcon} />
                     </IconButton>
                 </div>
                 <div className="sidebar-header-right-icon">
                     <IconButton>
-                        <MoreVertIcon style={leftsideIcon} />
+                        <MoreVertIcon style={rightsideIcon} />
                     </IconButton>
                 </div>
             </div>

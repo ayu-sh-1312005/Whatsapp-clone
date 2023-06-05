@@ -4,6 +4,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color: lightgray;
 }
 .sidebar-header-right{
     display: flex;

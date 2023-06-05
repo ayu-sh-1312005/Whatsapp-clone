@@ -1,16 +1,23 @@
 .side-chat-display{
     width: 100%;
-    height: 50px;
     border: 1px solid black;
     display: flex;
     align-items: center;
+    background-color: white;
+    color: gray;
+    box-sizing: border-box;
+    box-sizing: content-box;
+
 }
 .people-side-icon{
-    background-color: red;
+
     height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .people-side-chat{
-    background-color: blue;
+    
     flex: 1;
     height: 100%;
 }
