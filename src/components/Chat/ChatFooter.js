@@ -26,7 +26,7 @@ const sendIcon={
 
 
 function ChatFooter() {
-    const [initalIcon,changeIcon]=useState(<SendIcon style={sendIcon} />); 
+    const [initalIcon,changeIcon]=useState(<KeyboardVoiceIcon style={sendIcon} />); 
     const [message, setMessage] = useState('');
     function changeToSendIcon(event){
         console.log(event.target);
