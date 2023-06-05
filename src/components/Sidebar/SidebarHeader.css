@@ -1,0 +1,13 @@
+.sidebar-header{
+    border: 1px solid black;
+    flex: 0.1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sidebar-header-right{
+    display: flex;
+    flex: 0.6;
+    justify-content: space-evenly;
+    align-items: center;
+}

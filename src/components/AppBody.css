@@ -1,0 +1,7 @@
+.app-body{
+    height: 90%;
+    width: 90%;
+    background-color: #ededed;
+    display: flex;
+    box-shadow: -1px 4px 20px -6px rgb(76, 72, 72);
+}
