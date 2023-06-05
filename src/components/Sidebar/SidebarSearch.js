@@ -4,14 +4,6 @@ import FilterListIcon from '@mui/icons-material/FilterList';
 import SearchIcon from '@mui/icons-material/Search';
 import { IconButton } from "@mui/material";
 
-const filterIconStyle={
-    backgroundColor:"white",
-    height: "100%",
-    borderTopRightRadius: "10px",
-    borderBottomRightRadius: "10px",
-    borderColor:"red",
-    paddingRight:"5px"
-};
 
 function SidebarSearch(){
     return (<div className="sidebar-search">
@@ -25,7 +17,7 @@ function SidebarSearch(){
              </div>
              <div className="filter-icon">
              <IconButton>
-                <FilterListIcon style={filterIconStyle} />
+                <FilterListIcon />
             </IconButton>
              </div>
     </div>)
