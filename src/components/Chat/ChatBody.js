@@ -1,4 +1,5 @@
 /*jshint esversion: 6 */
+import React from "react";
 import "./ChatBody.css";
 import Receiver from "./Receiver";
 import Sender from "./Sender";

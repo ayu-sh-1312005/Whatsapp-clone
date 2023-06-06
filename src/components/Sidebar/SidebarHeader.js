@@ -1,4 +1,5 @@
 /*jshint esversion: 6 */
+import React from "react";
 import "./SidebarHeader.css";
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import ChatIcon from '@mui/icons-material/Chat';

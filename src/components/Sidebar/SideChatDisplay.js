@@ -1,4 +1,5 @@
 /*jshint esversion: 6 */
+import React from "react";
 import "./SideChatDisplay.css";
 import { Avatar, IconButton } from "@mui/material";
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
@@ -16,7 +17,7 @@ const chatIcon={
 };
 
 
-function SideChatDisplay(){
+function SideChatDisplay(props){
     return (
         <div className="side-chat-display">
             <div className="people-side-icon">
@@ -26,10 +27,10 @@ function SideChatDisplay(){
             </div>
             <div className="people-side-chat">
                 <div className="people-name">
-                    <h4>Ayush Gupta</h4>
+                    <h4>{props.name}</h4>
                 </div>
                 <div className="people-last-message">
-                    <p>It's been a long time</p>
+                    <p>Last messages...</p>
                 </div>
             </div>
         </div>

@@ -20,4 +20,8 @@
     
     flex: 1;
     height: 100%;
+    overflow: hidden;
+}
+.people-last-message{
+    overflow: hidden;
 }

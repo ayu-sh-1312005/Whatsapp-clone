@@ -1,4 +1,5 @@
 /*jshint esversion: 6 */
+import React from "react";
 import "./Chat.css";
 import ChatBody from "./Chat/ChatBody";
 import ChatFooter from "./Chat/ChatFooter";

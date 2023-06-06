@@ -1,4 +1,5 @@
 /*jshint esversion: 6 */
+import React from "react";
 import "./ChatFooter.css";
 import InsertEmoticonIcon from '@mui/icons-material/InsertEmoticon';
 import AttachFileIcon from '@mui/icons-material/AttachFile';
@@ -37,7 +38,12 @@ function ChatFooter() {
             changeIcon(<SendIcon style={sendIcon} />);
         }
     }
-    return (<div className="chat-footer">
+    function handleClick(event){
+        console.log("form submitted");
+        event.preventDefault();
+        setMessage("");
+    }
+    return (<form className="chat-footer">
         <div className="chat-footer-left">
             <IconButton>
                 <InsertEmoticonIcon style={emojiIcon} />
@@ -50,10 +56,10 @@ function ChatFooter() {
             <input onChange={changeToSendIcon} className="sendInput" placeholder="Type a message" value={message}></input>
         </div>
         <div className="chat-footer-right">
-            <IconButton>
+            <IconButton type="submit" onClick={handleClick}>
                 {initalIcon}
             </IconButton>
         </div>
-    </div>)
+    </form>)
  }
  export default ChatFooter;

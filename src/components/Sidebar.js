@@ -1,4 +1,5 @@
 /*jshint esversion: 6 */
+import React from "react";
 import "./Sidebar.css";
 import SidebarChat from "./Sidebar/SidebarChat";
 import SidebarHeader from "./Sidebar/SidebarHeader";

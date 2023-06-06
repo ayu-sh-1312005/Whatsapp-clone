@@ -1,4 +1,5 @@
 /*jshint esversion: 6 */
+import React from "react";
 import "./ChatHeader.css";
 import { IconButton } from "@mui/material";
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';

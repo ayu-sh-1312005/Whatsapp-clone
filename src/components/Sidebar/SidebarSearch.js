@@ -1,4 +1,5 @@
 /*jshint esversion: 6 */
+import React from "react";
 import "./SidebarSearch.css";
 import FilterListIcon from '@mui/icons-material/FilterList';
 import SearchIcon from '@mui/icons-material/Search';
