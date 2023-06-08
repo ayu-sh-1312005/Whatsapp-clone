@@ -6,9 +6,10 @@ import Login from "./Login";
 
 function App() {
   const [user,setUser]=useState(null);
+  const [getUrl,setUrl]=useState("");
   return (
     <div className="app">
-      {!user ? (<Login valid={setUser} />):(<AppBody />)}
+      {!user ? (<Login setUrl={setUrl} valid={setUser} />):(<AppBody profileUrl={getUrl} />)}
    </div>
   );
 }

@@ -12,7 +12,7 @@ import {
     useParams,
   } from "react-router-dom";
 
-function AppBody(){
+function AppBody(props){
     const {roomId}=useParams();
     const [roomName,setRoomName]=useState("");
     const [id,changeId]=useState('');
@@ -29,8 +29,8 @@ function AppBody(){
     console.log(id,"id----");
 
     return (<div className="app-body">
-        <Sidebar sb={changeId} />
-        {id!="" ? (<Chat passId={id} />):(<div></div>)}
+        <Sidebar profileUrl={props.profileUrl} sb={changeId} />
+        {id!="" ? (<Chat  passId={id} />):(<div></div>)}
     </div>)
 }
 export default AppBody;

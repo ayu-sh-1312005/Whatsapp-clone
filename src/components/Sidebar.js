@@ -11,7 +11,7 @@ function Sidebar(props) {
     const [sbId,setSbId]=useState('');
     props.sb(sbId);
     return (<div className="sidebar">
-        <SidebarHeader />
+        <SidebarHeader profileUrl={props.profileUrl} />
         <SidebarSearch />
         <AddNewChat />
         <SidebarChat sbc={setSbId} />

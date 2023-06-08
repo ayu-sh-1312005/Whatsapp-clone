@@ -18,12 +18,13 @@ const rightsideIcon={
     color: "#606060",
 };
 
-function SidebarHeader(){
+function SidebarHeader(props){
+    console.log(props.profileUrl,"Header:::::");
     return (
         <div className="sidebar-header">
             <div className="sidebar-header-left">
                 <IconButton>
-                    <AccountCircleIcon style={profileIcon} />
+                    <Avatar src={props.profileUrl} style={profileIcon} />
                 </IconButton>
             </div>
             <div className="sidebar-header-right">

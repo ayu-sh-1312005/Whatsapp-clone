@@ -5,6 +5,7 @@ import { signInWithPopup } from 'firebase/auth';
 
 function Login(props) {
     const [value,setValue]=useState(null);
+    const [getUrl,setUrl]=useState("");
     const signIn=() => {
         signInWithPopup(auth,provider).then((result)=>{
             const user=result.user;
@@ -16,6 +17,10 @@ function Login(props) {
     useEffect(()=>{
         props.valid(value);
         console.log(value);
+        if(value){
+           console.log(value.photoURL);
+           props.setUrl(value.photoURL);
+        }
     },[value]);
     
   return (
