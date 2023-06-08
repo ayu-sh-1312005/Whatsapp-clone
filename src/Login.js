@@ -3,13 +3,15 @@ import "./Login.css";
 import { auth,provider } from './databaseFiles/firebase';
 import { signInWithPopup } from 'firebase/auth';
 
-function Login() {
-    const [value,setValue]=useState('');
+function Login(props) {
+    const [value,setValue]=useState(true);
     const signIn=() => {
         // signInWithPopup(auth,provider).then((data)=>{
         // setValue(data.user.email);
         // localStorage.setItem("email",data.user.email);
         // )
+        setValue(!value);
+        props.valid(value);
     };
     
   return (

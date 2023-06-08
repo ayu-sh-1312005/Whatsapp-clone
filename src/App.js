@@ -8,7 +8,7 @@ function App() {
   const [user,setUser]=useState(null);
   return (
     <div className="app">
-      {!user ? (<Login />):(<AppBody />)}
+      {!user ? (<Login valid={setUser} />):(<AppBody />)}
    </div>
   );
 }
