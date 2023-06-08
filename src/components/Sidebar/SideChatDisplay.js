@@ -3,6 +3,7 @@ import React from "react";
 import "./SideChatDisplay.css";
 import { Avatar, IconButton } from "@mui/material";
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+import { Link } from "react-router-dom";
 
 const profileIcon={
     width: "50px",
@@ -18,22 +19,27 @@ const chatIcon={
 
 
 function SideChatDisplay(props){
+    function handleClick(){
+        props.sbcd(props.id);
+    }
     return (
-        <div className="side-chat-display">
-            <div className="people-side-icon">
-                <IconButton>
-                        <AccountCircleIcon src="" style={chatIcon} />
-                </IconButton>
-            </div>
-            <div className="people-side-chat">
-                <div className="people-name">
-                    <h4>{props.name}</h4>
+        // <Link className="side-chat-display-link" to={`/rooms/${props.id}`}>
+            <div className="side-chat-display" onClick={handleClick}>
+                <div className="people-side-icon">
+                    <IconButton>
+                            <AccountCircleIcon src="" style={chatIcon} />
+                    </IconButton>
                 </div>
-                <div className="people-last-message">
-                    <p>Last messages...</p>
+                <div className="people-side-chat">
+                    <div className="people-name">
+                        <h4>{props.name}</h4>
+                    </div>
+                    <div className="people-last-message">
+                        <p>Last messages...</p>
+                    </div>
                 </div>
             </div>
-        </div>
+        // </Link>
     )
 }
 export default SideChatDisplay;

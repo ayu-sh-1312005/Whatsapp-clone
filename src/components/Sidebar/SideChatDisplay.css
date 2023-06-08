@@ -1,3 +1,10 @@
+.side-chat-display-link{
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+}
 .side-chat-display{
     width: 100%;
     border: 1px solid black;
@@ -7,7 +14,7 @@
     color: gray;
     box-sizing: border-box;
     box-sizing: content-box;
-
+    text-decoration: none;
 }
 .people-side-icon{
 

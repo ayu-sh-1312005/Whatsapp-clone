@@ -30,7 +30,6 @@ function ChatFooter() {
     const [initalIcon,changeIcon]=useState(<KeyboardVoiceIcon style={sendIcon} />); 
     const [message, setMessage] = useState('');
     function changeToSendIcon(event){
-        console.log(event.target);
         setMessage(event.target.value);
         if (event.target.value==""){
         changeIcon(<KeyboardVoiceIcon style={sendIcon} />);
@@ -40,6 +39,7 @@ function ChatFooter() {
     }
     function handleClick(event){
         console.log("form submitted");
+        console.log("message send: ",message);
         event.preventDefault();
         setMessage("");
     }
