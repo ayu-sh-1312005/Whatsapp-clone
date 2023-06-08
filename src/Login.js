@@ -4,15 +4,19 @@ import { auth,provider } from './databaseFiles/firebase';
 import { signInWithPopup } from 'firebase/auth';
 
 function Login(props) {
-    const [value,setValue]=useState(true);
+    const [value,setValue]=useState(null);
     const signIn=() => {
-        // signInWithPopup(auth,provider).then((data)=>{
-        // setValue(data.user.email);
-        // localStorage.setItem("email",data.user.email);
-        // )
-        setValue(!value);
-        props.valid(value);
+        signInWithPopup(auth,provider).then((result)=>{
+            const user=result.user;
+            setValue(user);
+        }).catch((error)=>{
+            alert(error.message);
+        })
     };
+    useEffect(()=>{
+        props.valid(value);
+        console.log(value);
+    },[value]);
     
   return (
     <div className='login'>

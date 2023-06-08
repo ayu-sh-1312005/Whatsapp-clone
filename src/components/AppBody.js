@@ -30,7 +30,7 @@ function AppBody(){
 
     return (<div className="app-body">
         <Sidebar sb={changeId} />
-        <Chat passId={id} />
+        {id!="" ? (<Chat passId={id} />):(<div></div>)}
     </div>)
 }
 export default AppBody;
